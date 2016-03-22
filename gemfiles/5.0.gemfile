@@ -1,0 +1,9 @@
+gem "activemodel-serializers-xml", github: "rails/activemodel-serializers-xml", branch: "master"
+gem "rails", "~> 5.0.0.beta1"
+# gem "mongoid", "~> 4.0"
+gem "devise", github: "plataformatec/devise", branch: "master"
+
+gem "rspec-rails", "~> 3.3", github: "rspec/rspec-rails", branch: 'master'
+%w(rspec rspec-core rspec-expectations rspec-mocks rspec-support).each do |lib|
+  gem lib, github: "rspec/#{lib}", branch: 'master'
+end
